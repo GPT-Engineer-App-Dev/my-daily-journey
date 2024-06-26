@@ -1,5 +1,6 @@
 import { Container, VStack, Heading, Text, Box, Image, Link } from "@chakra-ui/react";
 import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link as RouterLink } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
             <FaLinkedin size="24px" />
           </Link>
         </VStack>
+        <Link as={RouterLink} to="/add-post" color="teal.500" fontWeight="bold">Add New Post</Link>
       </VStack>
     </Container>
   );
